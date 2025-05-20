@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Style Transfer</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+        { "imports": { "@tensorflow/tfjs": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.20.0/dist/tf.es2017.min.js" } }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Neural Style Transfer</h1>
+        <p>Apply the style of one image to another using TensorFlow.js.</p>
+    </header>
+
+    <main>
+        <div class="image-selection-area">
+            <div class="image-container">
+                <h2>Content Image</h2>
+                <img id="content-image-preview" src="content-default.png" alt="Content Image Preview">
+                <input type="file" id="content-image-input" accept="image/*">
+                <p>This is the base image whose content will be preserved.</p>
+            </div>
+            <div class="image-container">
+                <h2>Style Image</h2>
+                <img id="style-image-preview" src="style-default.png" alt="Style Image Preview">
+                <input type="file" id="style-image-input" accept="image/*">
+                <p>This image provides the artistic style to be applied.</p>
+            </div>
+        </div>
+
+        <button id="transfer-button" disabled>Transfer Style</button>
+        <p id="status">Initializing...</p>
+
+        <div class="output-area">
+            <h2>Stylized Output</h2>
+            <img id="output-image" src="#" alt="Stylized Output Image">
+            <p id="output-placeholder-text">The result of applying the style to the content image will appear here.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Powered by TensorFlow.js and Google's Magenta Arbitrary Style Transfer Model.</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
