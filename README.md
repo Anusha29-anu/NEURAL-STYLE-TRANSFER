@@ -85,3 +85,5 @@ Computation Cost: Traditional NST is computationally intensive and needs high-en
 Conclusion
 Neural Style Transfer exemplifies the creative power of deep learning and computer vision. It brings together the spheres of art and technology, enabling machines not just to perceive images but to re-imagine them creatively. As NST advances further, it is opening new avenues for creative expression, design automation, and interactive art applications.
 
+![Image](https://github.com/user-attachments/assets/ca544dc3-5ce4-4d41-af6e-b6fcee108b3f)
+
